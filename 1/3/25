@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Quiz para programadores</title>
+    <meta name="description" content="Um quiz interativo para programadores">
+</head>
+<body>
+    <header> <!--header para cabecalho-->
+        <h1>Quiz interativo para programadores</h1>
+        <p>Teste seus conhecimentos em programacao <br> e veja qual pontuacao consegue fazer!</p>
+    </header>
+    <main> <!----para conteudo principal-->
+        <section> <!--intro-->
+            <h2> Sobre esse quiz</h2>
+            <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimentos em programacao, como <em>linguagens de programacao</em>, conceitos basicos e mais</p> <!--strong para negrito;em para italico-->
+            <p>Voce encontrara diferentes tipos de perguntas, incluindo multipla escolha, texto e perguntas de data.<br> Desafie-se com este quiz!</br></p>
+            <p>Voce podera encontrar alguns acronimos como <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, que sao comumente usados em questoes relacionadas ao desenvolvimento web</p> <!--abbr para abreviacoes;section para secoes de escrita-->
+        </section>
+        <section> <!--pergunta1: multipla escolha-->
+            <h2>Pergunta 1: Qual o nome da linguagem de programacao que estrutura codigos de paginas web?</h2>
+            <form>
+                <input type="radio" value="Python" id="p1a" name="Pergunta 1">
+                <label for="p1a">Python</label> <br>
+                <input type="radio" value="HTML" id="p1b" name="Pergunta 1">
+                <label for="p1b">HTML</label> <br>
+                <input type="radio" value="Javascript" id="p1c" name="Pergunta 1">
+                <label for="p1c">Javascript</label> <br>
+                <input type="radio" value="Ruby" id="p1d" name="Pergunta 1">
+                <label for="p1d">Ruby</label> <br>
+            </form> <!--form para criar um formulario para o cliente; input para receber resposta;label para sinalizar legenda -->
+        </section>
+        <section> <!--pergunta2: texto-->
+        <h2>
+            Pergunta 2: Na URL https://www.google.com, o trecho "google.com" sem refere a___
+        </h2>
+        <form><input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta..."></form>
+        </section>
+        <section> <!--pergunta3: senha-->
+        <h2>Pergunta 3: Digite um exemplo de senha forte</h2>
+        <input type="password" id="p3" name="Pergunta 3" placeholder="Digite a senha...">
+        </section>
+        <section> <!--pergunta4: data-->
+        <h2> Pergunta 4: Em qual ano o HTML deve sua primeira versao?</h2>
+        <form>
+            <input type="date" id="p4" name="pergunta4">
+        </form>
+        </section>
+        <section> <!--pergunta5: selecao multipla-->
+        <h2> Pergunta 5: Quais dessas alternativas sao consideradas linguagens de programacao?</h2>
+        <form>
+            <input type="checkbox" id="p5a" name="Pergunta 5" value="Javascript">
+            <label for="p5a">Javascript</label> <br>
+            <input type="checkbox" id="p5b" name="Pergunta 5" value="Java">
+            <label for="p5b">Java</label> <br>
+            <input type="checkbox" id="p5c" name="Pergunta 5" value="CSS">
+            <label for="p5c">CSS</label> <br>
+            <input type="checkbox" id="p5d" name="Pergunta 5" value="HTML">
+            <label for="p5d">HTML</label> <br>
+        </form>
+        </section>
+        <section> <!--pergunta6: file-->
+        <h2> Pergunta 6: Faca upload de um arquivo com codigo HTML</h2>
+        <form>
+            <input type="file" id="p6" name="Pergunta 6">
+        </form>
+        </section>
+        <section> <!--pergunta7: menu suspenso-->
+            <h2> Pergunta 7: Selecione o atributo do input que define seu tipo: </h2>
+            <form>
+                <select name="pergunta7:" id="p7">
+                    <option value="id">id</option>
+                    <option value="type">type</option>
+                    <option value="placeholder">placeholder</option>
+                </select>
+            </form>
+        </section>
+        <section> <!--pergunta8: imagem-->
+            <h2> Pergunta 8: Qual linguagem esta sendo representada pela imagem abaixo?</h2>
+            <figure>
+                <img src="https://www.infoescola.com/wp-content/uploads/2011/03/java.jpg" alt="Logotipo de uma linguagem de programacao">
+                <figcaption> Figura 1: Logotipo de uma linguagem de programacao</figcaption>
+            </figure>
+            <form>
+                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+            </form>
+        </section>
+        <section> <!--tabela de pontuacao-->
+            <h2>Tabela de Pontuacao</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Pontuacao</th>
+                        <th>Avaliacao</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td>0-2</td>
+                            <td> Nao desista! </td>
+                        </tr>
+                            <tr>
+                                <td>3-4</td>
+                                <td> Voce ainda precisa melhorar </td>
+                            </tr>
+                            <tr>
+                                <td>5-7</td>
+                                <td> Muito bom! </td>  
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td> Perfeito </td>
+                            </tr>
+                        </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">Boa sorte na proxima</td>
+                                </tr>
+                            </tfoot>
+            </table>
+        </section>
+        <section> <!--listas-->
+        <h2>Verifique suas respostas</h2>
+        <details>
+            <summary>Clique aqui para ver suas respostas</summary>
+            <ol>
+                <li>HTML</li>
+                <li>Dominio</li>
+                <li>Senhas com caracteres, simbolos e numeros</li>
+                <li>1991</li>
+                <li>Javascript e Java</li>
+                <li>O arquivo deve ter extensao .html</li>
+                <li>Type</li>
+                <li>Java</li>
+            </ol>
+        </details>
+        </section>
+        <section> <!--formulario-->
+        <h2>Nos de seu feedback</h2>
+        <form>
+            <fieldset>
+                <legend>Informacoes de contato</legend>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="mail"><br>
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea name="comentarios" id="coment" placeholder="Comente aqui:" rows="4" cols="50"></textarea>
+            </fieldset>
+        </form>
+        </section>
+    </main> 
+    <footer><!--footer para rodape-->
+        <p>Quiz de programadores. Todos os direitos reservados.</p>
+    </footer> 
+</body>
+</html>
